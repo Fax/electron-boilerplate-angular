@@ -1,6 +1,7 @@
 const app = require('electron').app;
 const electron = require('electron');
 const BrowserWindow = require('electron').BrowserWindow;
+const crashReporter = require('electron').crashReporter;
 // Module to create native browser window.
 
 import electronConnect from 'electron-connect';
@@ -10,8 +11,7 @@ var client = electronConnect.client;
 console.log("starting the nodeprocess");
 
 // Report crashes to our server.
-import crashReporter from "crash-reporter";
-crashReporter.start({companyName:"asd"});
+crashReporter.start({companyName:"asd", submitURL:"asd.com"});
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the javascript object is GCed.
