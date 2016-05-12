@@ -1,0 +1,21 @@
+@import './shared/icons';
+
+@import './shared/colors';
+
+body {
+  padding:0;
+  margin:0;
+  background-color: $background;
+  
+}
+
+p{
+  color:$foreground;
+}
+h1 {
+  color:$title;
+}
+
+h2{
+  color:$strong;
+}
