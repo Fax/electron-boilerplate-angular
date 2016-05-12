@@ -1,5 +1,6 @@
-// Module to control application life.
-import app from "app";
+const app = require('electron').app;
+
+
 // Module to create native browser window.
 import BrowserWindow from "browser-window";
 
