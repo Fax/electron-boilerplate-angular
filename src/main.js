@@ -1,8 +1,7 @@
 const app = require('electron').app;
-
-
+const electron = require('electron');
+const BrowserWindow = require('electron').BrowserWindow;
 // Module to create native browser window.
-import BrowserWindow from "browser-window";
 
 import electronConnect from 'electron-connect';
 
